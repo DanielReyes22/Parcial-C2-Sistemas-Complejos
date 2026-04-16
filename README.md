@@ -20,7 +20,9 @@ Donde: $P(k)$: Es la probabilidad de que un nodo (un router o servidor) tenga $k
 $\gamma$: Es un parámetro que en Internet suele oscilar entre 2 y 3.
 
 ¿Por qué esto explica su complejidad?
+
 Este modelo matemático revela tres características fundamentales de la complejidad del sistema:
+
 Auto-Organización: El crecimiento de la red no es centralizado, es decir, los nuevos nodos tienden a conectarse a los nodos que ya estan conectados. 
 
 Robustez y Fragilidad: Por la ley de potencia el sistema es robusto ante fallos aleatorios por ende se explica el porque el internet es resistente a fallos accidentales. Pero su mayor vulnerabilidad son los ataques a los HUBS
