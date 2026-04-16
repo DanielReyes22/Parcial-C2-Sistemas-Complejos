@@ -6,9 +6,9 @@ Para explicar por qué Internet es un sistema complejo no basaremos en el modelo
 El Modelo grafo
 Podemos representar el Internet como un grafo $G = (V, E)$, el cual:
 
--$V$ (Vértices/Nodos): Son los routers, servidores o dispositivos finales.
+- $V$ (Vértices/Nodos): Son los routers, servidores o dispositivos finales.
 
--$E$ (Aristas/Enlaces): Son las conexiones físicas o lógicas entre ellos.
+- $E$ (Aristas/Enlaces): Son las conexiones físicas o lógicas entre ellos.
 
 El Modelo: Ley de Potencia
 A diferencia de las redes tradicionales, Internet no es aleatorio. Su estructura se define mediante una Ley de Potencia, expresada matemáticamente como:
