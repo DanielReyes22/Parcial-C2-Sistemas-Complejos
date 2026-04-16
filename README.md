@@ -15,9 +15,11 @@ A diferencia de las redes tradicionales, Internet no es aleatorio. Su estructura
 
 $$P(k) \sim k^{-\gamma}$$
 
-Donde: $P(k)$: Es la probabilidad de que un nodo (un router o servidor) tenga $k$ conexiones.
+Donde: 
 
-$\gamma$: Es un parámetro que en Internet suele oscilar entre 2 y 3.
+- $P(k)$: Es la probabilidad de que un nodo (un router o servidor) tenga $k$ conexiones.
+
+- $\gamma$: Es un parámetro que en Internet suele oscilar entre 2 y 3.
 
 ¿Por qué esto explica su complejidad?
 
