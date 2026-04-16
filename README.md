@@ -28,3 +28,44 @@ Auto-Organización: El crecimiento de la red no es centralizado, es decir, los n
 Robustez y Fragilidad: Por la ley de potencia el sistema es robusto ante fallos aleatorios por ende se explica el porque el internet es resistente a fallos accidentales. Pero su mayor vulnerabilidad son los ataques a los HUBS
 
 HUBS: La mayoria de los nodos tienen pocas conexiones; Caso aparte que hay unos pocos nodos (HUBS) que si tienen miles de conexiones. 
+
+
+
+
+
+
+2. Aritmética Básica RecursivaSe implementó una lógica de computación básica utilizando la función sucesora $S(n) = n + 1$ como unidad fundamental de construcción.
+
+Suma: Se define mediante la aplicación recursiva del sucesor de un número $a$, repetido $b$ veces.
+
+Multiplicación: Utiliza la función de suma previamente construida para agregar un valor $a$ sobre sí mismo $b$ veces de forma recursiva
+
+
+
+
+
+3. Modelo de Interacciones Netas (Programación Funcional)
+
+Se modeló el concepto de Interacción Neta, que define cómo el estado de un elemento dentro de un sistema depende de la influencia agregada de su entorno.
+
+Concepto Matemático: $I_{neta}(i) = \sum_{j \in Vecinos} f(S_i, S_j)$.
+
+Implementación: Se aplicó programación funcional en Python, utilizando map para transformar los estados de los vecinos en interacciones individuales y reduce para realizar la sumatoria (agregación) total del efecto sobre el nodo.
+
+
+
+
+
+5. Modelado Basado en Agentes (ABM): Atractores
+Se desarrolló un Modelamiento Basado en Agentes para ilustrar cómo surge el orden a partir de reglas locales simples, enfocándose en el concepto de Atractor.
+
+
+Dinámica del Agente: Cada agente opera de forma autónoma y ajusta su posición actual en cada paso de tiempo hacia un punto de equilibrio estable.
+
+
+Atractor de Punto Fijo: El sistema demuestra convergencia; independientemente de la posición aleatoria inicial, el sistema se auto-organiza hacia el estado estable definido en las coordenadas del atractor.
+
+
+
+
+
