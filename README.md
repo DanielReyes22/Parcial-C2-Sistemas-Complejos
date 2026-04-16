@@ -6,9 +6,9 @@ Para explicar por qué Internet es un sistema complejo no basaremos en el modelo
 El Modelo grafo
 Podemos representar el Internet como un grafo $G = (V, E)$, el cual:
 
-$V$ (Vértices/Nodos): Son los routers, servidores o dispositivos finales.
+-$V$ (Vértices/Nodos): Son los routers, servidores o dispositivos finales.
 
-$E$ (Aristas/Enlaces): Son las conexiones físicas o lógicas entre ellos.
+-$E$ (Aristas/Enlaces): Son las conexiones físicas o lógicas entre ellos.
 
 El Modelo: Ley de Potencia
 A diferencia de las redes tradicionales, Internet no es aleatorio. Su estructura se define mediante una Ley de Potencia, expresada matemáticamente como:
@@ -23,11 +23,11 @@ $\gamma$: Es un parámetro que en Internet suele oscilar entre 2 y 3.
 
 Este modelo matemático revela tres características fundamentales de la complejidad del sistema:
 
-Auto-Organización: El crecimiento de la red no es centralizado, es decir, los nuevos nodos tienden a conectarse a los nodos que ya estan conectados. 
+-Auto-Organización: El crecimiento de la red no es centralizado, es decir, los nuevos nodos tienden a conectarse a los nodos que ya estan conectados. 
 
-Robustez y Fragilidad: Por la ley de potencia el sistema es robusto ante fallos aleatorios por ende se explica el porque el internet es resistente a fallos accidentales. Pero su mayor vulnerabilidad son los ataques a los HUBS
+-Robustez y Fragilidad: Por la ley de potencia el sistema es robusto ante fallos aleatorios por ende se explica el porque el internet es resistente a fallos accidentales. Pero su mayor vulnerabilidad son los ataques a los HUBS
 
-HUBS: La mayoria de los nodos tienen pocas conexiones; Caso aparte que hay unos pocos nodos (HUBS) que si tienen miles de conexiones. 
+-HUBS: La mayoria de los nodos tienen pocas conexiones; Caso aparte que hay unos pocos nodos (HUBS) que si tienen miles de conexiones. 
 
 
 
@@ -55,15 +55,39 @@ Implementación: Se aplicó programación funcional en Python, utilizando map pa
 
 
 
+4. La universalidad es una "Constante de la naturaleza" la cual establece que sistemas con detalles microscopicos que son completamente diferentes (atomos, neuronas, routers o personas) muestan el mismo comportamiento macroscopico cuando se acercan a un punto de transición o critico.
+   
+   -No importa el sistema como este hecho, si no como esta organizado.-
+   
+Desde el modelado computacional, la universalidad nos permite agrupar distintos problemas en clases de universalidad, es decir, para dinamica matematica se podria solucionar un problerma de fisica de particulas y un problema de logistica urbana, ya que se podria usar el mismo algoritmo para resolverlas 
+
+
+Aplicación en un prbolema de ingenieria
+Un problema critico puede ser la robustez en las redes de distribución(internet, elesctrica o agua)anste fallos masivos.
+
+
+-Problema: Determinar el momento en que la red empiece a colapsar si los nodos fallan aleatoriamente.
+
+
+-Modelo computacional (Percolación): La percolación estudia como cambia la conectividad de una red y sistemas complejos cuando se eliminan o añaden - nodos o enlaces de manera aleatoria o estrategica. Entonces en ves de modelar la ficia compleja de la electricidad o la presion del agua se usa este modelo.
+
+
+
+
+
 
 5. Modelado Basado en Agentes (ABM): Atractores
-Se desarrolló un Modelamiento Basado en Agentes para ilustrar cómo surge el orden a partir de reglas locales simples, enfocándose en el concepto de Atractor.
+Para este ejercicio, se implementó un modelo inspirado en la Confianza Limitada (Hegselmann-Krause), donde los agentes representan estudiantes con una calificación inicial aleatoria.
 
+-Componentes del Modelo:
 
-Dinámica del Agente: Cada agente opera de forma autónoma y ajusta su posición actual en cada paso de tiempo hacia un punto de equilibrio estable.
+-Agentes: Estudiantes individuales con una "nota" (estado interno) entre 0 y 5.
 
+-Estado Inicial: Caos total. Las notas están dispersas de forma aleatoria por todo el espacio de estados.
 
-Atractor de Punto Fijo: El sistema demuestra convergencia; independientemente de la posición aleatoria inicial, el sistema se auto-organiza hacia el estado estable definido en las coordenadas del atractor.
+-Regla Local (Tolerancia): Un estudiante solo interactúa con otros cuyas notas sean similares a la suya (dentro de un rango de tolerancia $\epsilon$).
+
+-Mecanismo de Adaptación: El agente ajusta su nota al promedio de su grupo de interacción.
 
 
 
