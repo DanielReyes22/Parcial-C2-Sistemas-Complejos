@@ -7,6 +7,7 @@ El Modelo grafo
 Podemos representar el Internet como un grafo $G = (V, E)$, el cual:
 
 $V$ (Vértices/Nodos): Son los routers, servidores o dispositivos finales.
+
 $E$ (Aristas/Enlaces): Son las conexiones físicas o lógicas entre ellos.
 
 El Modelo: Ley de Potencia
